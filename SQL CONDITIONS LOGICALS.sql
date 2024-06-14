@@ -1,4 +1,4 @@
-#PRACTICE QNS CONDITIONS 
+
 
 create database employee;
 create table employee.employee_table
@@ -264,68 +264,4 @@ SELECT * FROM EMPLOYEE.EMPLOYEE_TABLE ORDER BY EMPLOYEE_TABLE.EMP_SALARY  DESC L
 
 How can you find the employees whose names have exactly 5 characters?
 SELECT * FROM EMPLOYEE.EMPLOYEE_TABLE WHERE LENGTH(EMPLOYEE_TABLE.EMP_NAME)=5;
-
-How would you calculate the total salary and the number of employees for each designation, but only include designations 
-with more than 3 employees?
-
-How can you list job locations where the average experience of employees is greater than 5 years?
-Conditional Aggregation:
-
-How would you find the average salary of employees for each job location, only considering employees who have more than 2 years of experience?
-Joining Tables
-Join with Condition:
-
-How can you list all employees along with their job location and joining date, ensuring that employees without a job location are still included?
-Multiple Joins:
-
-How would you find the names of employees who have the same job ID but are located in different job locations?
-Self Join Challenge:
-
-How can you find pairs of employees who have the same designation and whose salaries differ by less than $10,000?
-Data Manipulation and Transformation
-Complex Insert:
-
-How would you insert a new employee into employee_table and simultaneously ensure they have a corresponding entry in hiredet_table with their job location and other details?
-Conditional Update:
-
-How would you increase the salary by 20% for employees who have more than 10 years of experience and are located in 'New York'?
-Conditional Delete:
-
-How can you remove employees from employee_table who have no corresponding entry in hiredet_table?
-Advanced Query Techniques
-Window Functions:
-
-How would you rank employees by their salary within each job location?
-Recursive Queries:
-
-Suppose the employee_table had a manager_id column that references emp_id. How would you write a query to find the hierarchy of employees under a specific manager?
-Pivoting Data:
-
-How can you transform the employee_table to show the number of employees and the total salary for each designation in a single query result?
-Handling NULL Values:
-
-How can you count the number of employees who do not have a joblocation in the hiredet_table?
-Temporal Queries:
-
-How would you find the employees who joined in the last 6 months?
-Combining Results:
-
-How can you list all distinct job locations from both the employee_table and hiredet_table?
-General Data Management and Integrity
-Foreign Key Enforcement:
-
-How would you ensure that every emp_id in hiredet_table must exist in employee_table?
-Data Consistency Check:
-
-How would you verify that all employees with a salary above $100,000 are designated as 'Senior' or higher in employee_table?
-Normalization Analysis:
-
-If you notice repeating groups in the employee_table, what steps would you take to normalize the table structure?
-Index Usage:
-
-How would you create an index to optimize queries that frequently filter employee_table by emp_salary?
-
-
-
-
 
